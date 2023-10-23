@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<body style="background-color: white;" id="body">
+    <div id="div1"></div>
+</body>
+<style>
+    #div1 {
+        width: 200px;
+        height: 400px;
+        background-color: darkred;
+    }
+</style>
+<script>
+    const Divtarget = document.getElementById("div1");
+    class animasi {
+        constructor() {
+            this.effect1 = [
+                {
+                    width: "200px",
+                    backgroundColor: "blue"
+                },
+                {
+                    width: "1000px"
+                }
+            ];
+            this.opsi1 = {
+                duration: 5000,
+                fill: "forwards",
+                easing: "ease-in-out",
+                direction: "normal",
+                delay: 5000
+            };
+        }
+    }
+    const getanime = new animasi();
+    const keyframEffect1 = new KeyframeEffect(Divtarget, getanime.effect1, getanime.opsi1);
+    const animation1 = new Animation(keyframEffect1);
+    animation1.play();
+
+    // animation1.finished.then(() => {
+    //     const body = document.getElementById("body");
+    //     body.style.backgroundColor = "red";
+    // })
+
+    animation1.onfinish = () => {
+        const body = document.getElementById("body");
+        body.style.transition = "0.5s linear"
+        body.style.backgroundColor = "red";
+    }
+
+</script>
+
+</html>

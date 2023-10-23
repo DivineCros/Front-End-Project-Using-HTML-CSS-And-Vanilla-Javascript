@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Author" content="Ngurah Eka">
+  <meta name="Description" content="DC Restaurant">
+  <title>DC Restaurant</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Start Header -->
+  <header aria-label="Header">
+    <nav id="primary-nav" aria-label="Primary-Navigation">
+      <div class="nav-logo">
+        <img src="img/logo.png" alt="DC-Logo" width="32" height="32" loading="lazy">
+        <h2><span>DC</span>Restaurant.</h2>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <i id="hamburger" class="fa-solid fa-bars"></i>
+    </nav>
+    <nav id="secondary-nav" aria-label="Small-Width-Navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- End Primary Nav -->
+
+    <!-- Start Hero Jumbotron -->
+
+    <section id="hero" aria-label="Hero-Jumbotron">
+
+      <div class="image-container">
+        <div class="slide">
+          <div class="hero-title">
+            <h1>Convenient Place</h1>
+            <p>Bringing class to cuisine</p>
+          </div>
+        </div>
+        <div class="slide hide-img">
+          <div class="hero-title">
+            <h1>Delicious Food For You</h1>
+            <p>Once you try it, you will love it</p>
+          </div>
+        </div>
+        <div class="slide hide-img">
+          <div class="hero-title">
+            <h1>Prioritizing The Best Service</h1>
+            <p>A genuine fine-dining experience awaits</p>
+          </div>
+        </div>
+        <div class="slide hide-img">
+          <div class="hero-title">
+            <h1>Provides Comfort In Every Sip</h1>
+            <p>It’s time to enjoy the finer things in life</p>
+          </div>
+        </div>
+      </div>
+      <div class="next-image"><i class="fa-solid fa-angle-right"></i></div>
+      <div class="previous-image"><i class="fa-solid fa-angle-left"></i></div>
+      <div class="indicators"></div>
+
+    </section>
+    <!-- End Hero JumboTron -->
+  </header>
+  <!-- End Header -->
+
+  <!-- Start Main -->
+  <main>
+    <section id="about" aria-label="About-Section">
+      <figure>
+        <img src="img/image-05.jpg" alt="Image-05" width="600" height="750" loading="lazy">
+      </figure>
+      <article>
+        <h2>About DC Restaurant</h2>
+        <p class="different-style">Tradition since 1889</p>
+        <p class="about-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
+          nulla minus reiciendis
+          molestias quia ipsum culpa sequi provident modi impedit est nihil, ipsam perferendis itaque. Eligendi veniam
+          harum eaque quae.
+          In explicabo hic nisi tenetur eligendi, iste, fuga magni ipsa consequatur ea harum aspernatur, aliquam
+          consequuntur. Non tempora quo similique id a itaque fugiat provident quis cupiditate. Ea, enim aperiam?</p>
+        <p class="about-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
+          deleniti et facere omnis
+          architecto error, voluptatum odit quibusdam illum laudantium tempore officiis recusandae quisquam eveniet
+          commodi! Nostrum qui beatae atque.</p>
+      </article>
+
+    </section>
+    <hr>
+    <!-- End About Section -->
+
+    <!-- Start Menu Section -->
+    <section id="menu" aria-label="Menu-Section">
+      <article>
+        <h2>Our Menu</h2>
+        <h4>Bread Basket</h4>
+        <p class="menu-list">Assortment of fresh baked fruit breads and muffins 5.50
+        </p>
+        <h4>Honey Almond Granola with Fruits</h4>
+        <p class="menu-list">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+        <h4>Belgian Waffle</h4>
+        <p class="menu-list">Vanilla flavored batter with malted flour 7.50</p>
+        <h4>Scrambled eggs</h4>
+        <p class="menu-list">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+        <h4>Blueberry Pancakes</h4>
+        <p class="menu-list">With syrup, butter and lots of berries 8.50</p>
+      </article>
+      <figure>
+        <img src="img/image-06.jpg" alt="image-06" width="600" height="750" loading="lazy">
+      </figure>
+    </section>
+    <hr>
+    <!-- End Menu Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="contact-text">We offer full-service catering for any event, large or small. We understand your needs and
+        we will cater the
+        food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.
+
+      </p>
+      <address>Catering Service, 42nd Living St, 43043 New York, NY</address>
+      <p class="contact-text">You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can
+        send us a message
+        here:
+
+      </p>
+      <form action="http://httpbin.org/get" method="get">
+        <p><input type="text" name="name" id="name" placeholder="Name" required autocomplete="on"></p>
+        <p><input type="number" name="number" id="number" placeholder="How many people" required></p>
+        <p><input type="date" name="date" id="date" required></p>
+        <p><input type="text" name="message" id="message" placeholder="Message / Special requirements"></p>
+        <button>SEND MESSAGE</button>
+      </form>
+    </section>
+
+    <!-- End Contact Section -->
+    <div class="back-to-top"><a href="#">
+        <i class="fa-solid fa-angles-up"></i></a>
+    </div>
+  </main>
+  <footer>
+    <div class="third-navbar">
+      <ul>
+        <li>Template From : <a
+            href="https://www.w3schools.com/w3css/tryw3css_templates_gourmet_catering.htm">W3shools</a>
+        </li>
+        <li>Remade By : &copy; DivineCross 2023</li>
+        <li>Image From : <a href="unsplash.com">unsplash.com</a> </li>
+      </ul>
+    </div>
+    <p>Note : For Learning Purpose Only</p>
+  </footer>
+
+
+  <!-- End Main -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
