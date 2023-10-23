@@ -1,4 +1,4 @@
 # Front-End Project
 This is for learning purpose only
 Image from unsplash.com
-Template reference from w3cshools.com and other source recreate by DivineCross.
+Template reference from w3cshools.com and other sources recreate by DivineCross.
